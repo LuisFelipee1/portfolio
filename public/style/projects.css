@@ -1,0 +1,172 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+}
+
+.container-projects p {
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.pjct {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #ffffff;
+    transition: 0.5s;
+}
+
+.pjct h2 {
+    background: linear-gradient(90deg, #00ffff, #ff00c3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.pjct p {
+    background-color: #333;
+    text-align: justify;
+}
+
+.btn-script {
+    background: linear-gradient(90deg, #00ffff, #ff00c3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #ffffff;
+    border: solid 1px white;
+    padding: 7px;
+    margin: 10px 10px;
+    transition: 0.5s;
+}
+
+.btn-script:hover {
+    background: linear-gradient(90deg, #ff00c3, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    box-shadow: 0 0 20px transparent;
+}
+
+.btn-back {
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #ffffff;
+    border: solid 1px white;
+    padding: 7px;
+    margin: 10px 30px;
+    color: white;
+    z-index: 15;
+    transition: 0.5s;
+}
+
+.btn-back:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+/* CARROSSEL */
+
+.carrossel-container {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    overflow: hidden;
+    height: fit-content; /* Ajuste conforme necessário */
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 15px 0;
+  }
+  
+  .carrossel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carrossel-slide img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+  }
+  
+  .carrossel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .carrossel-button.prev {
+    left: 10px;
+  }
+  
+  .carrossel-button.next {
+    right: 10px;
+  }
+  
+/*----------------------*/
+
+/* CARROSSEL SNK*/
+
+.carrossel-containerSNK {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    overflow: hidden;
+    height: fit-content; /* Ajuste conforme necessário */
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 15px 0;
+  }
+  
+  .carrossel-slideSNK {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carrossel-slideSNK img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+  }
+  
+  .carrossel-buttonSNK {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .carrossel-buttonSNK.prevSNK {
+    left: 10px;
+  }
+  
+  .carrossel-buttonSNK.nextSNK {
+    right: 10px;
+  }
+  
+/*----------------------*/

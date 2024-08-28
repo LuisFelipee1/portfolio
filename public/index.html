@@ -13,22 +13,28 @@
 <body ng-controller="homeController">
     <div class="container">
         <div class="side-bar" ng-class="{active: activee}">
-            <button class="btn-infos">Projetos</button>
-            <button class="btn-infos">Habilidades</button>
-            <button class="btn-infos">Experiências</button>
-            <button class="btn-infos">Curiosidades</button>
+            <button class="btn-infos" ng-click="goToProjects()">Projetos</button>
+            <button class="btn-infos" ng-click="goToSkills()">Habilidades</button>
+            <button class="btn-infos" ng-click="goToXp()">Experiências</button>
+            <button class="btn-infos" ng-click="goToCuriosity()">Curiosidades</button>
         </div>
         <button class="button-side-bar" ng-click="openMenu()">{{ content_side_bar }}</button>
     </div>
     <div class="content-welcome">
-        <h1>Olá, <br> eu sou o <span class="name-content">Luis Felipe</span> <br> e sou desenvolvedor web!!</h1>
+        <p>Olá, <br> eu sou o <span class="name-content">Luis Felipe</span> <br> e sou desenvolvedor web!!</p>
     </div>
     
     <div class="footer-bar">
         <div class="tag-links">
-            <a href="">Linkedin</a>
-            <a href="">GitHub</a>
-            <a href="">Email</a>
+            <a href="https://www.linkedin.com/in/luis-felipe-alves-fernandes-190198201/" target="_blank">
+                <img src="./imgs/icons8-linkedin.svg" alt="Icon SVG" width="30" height="30">
+            </a>
+            <a href="https://github.com/LuisFelipee1" target="_blank">
+                <img src="./imgs/github (1).png" alt="Icon SVG" width="25" height="25">
+            </a>
+            <a href="mailto:luisfelipealves128@gmail.com" target="_blank">
+                <img src="./imgs/gmail.png" alt="email-img" width="30" height="30">
+            </a>
         </div>
         <p>Desenvolvido por Luis Felipe ©</p>
     </div>

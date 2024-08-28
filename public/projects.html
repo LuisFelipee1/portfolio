@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="my-portfolio">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja Bem vindo!!</title>
+    <link rel="stylesheet" href="style/projects.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="./script/projects.js"></script>
+</head>
+<body ng-controller="projectsController">
+    <div class="container-projects text-center mt-5 color-white text-light">
+        <div class="d-flex justify-content-start">
+            <button class="btn-back" ng-click="goToHome()">Voltar</button>
+        </div>
+        <h1>MEUS PROJETOS:</h1>
+        <p class="m-5">Desenvolvi dois projetos pessoais bastante funcionais que refletem minha paixão por criar soluções práticas e inovadoras. O primeiro é um aplicativo de receitas, projetado para tornar o preparo de refeições mais simples e prazeroso. O segundo é uma loja online especializada em tênis, que combina uma experiência de compra moderna com uma vasta gama de produtos. Ambos os projetos destacam minhas habilidades em desenvolvimento e design, e estão prontos para serem explorados com mais detalhes.
+        </p>
+        <div class="projects d-flex justify-content-around">
+            <div class="recipe-project pjct m-5">
+                <h2>Recipes App</h2>
+                <div class="carrossel-container">
+                    <div class="carrossel-slide">
+                      <img src="./imgs/drinksPage.png" alt="Imagem 1">
+                      <img src="./imgs/favoriteReipesPage.png" alt="Imagem 2">
+                      <img src="./imgs/InProgressPage.png" alt="Imagem 3">
+                      <img src="./imgs/loginCorrect_app.png" alt="Imagem 4">
+                      <img src="./imgs/ProfilePage.png" alt="Imagem 5">
+                    </div>
+                    <button class="carrossel-button prev" ng-click="prevSlide()">&#10094;</button>
+                    <button class="carrossel-button next" ng-click="nextSlide()">&#10095;</button>
+                  </div>
+                <p>Desenvolvi um aplicativo de receitas intuitivo e altamente funcional, projetado para ajudar os usuários a explorar e criar pratos deliciosos com facilidade. O aplicativo oferece uma vasta coleção de receitas, desde opções rápidas e simples até pratos gourmet. Com uma interface amigável, os usuários podem buscar receitas por ingredientes, categorias ou nível de dificuldade, e até mesmo salvar suas favoritas para acesso rápido. Além disso, o aplicativo inclui funcionalidades como a criação de listas de compras e o planejamento de refeições, tornando a experiência de cozinhar mais organizada e divertida.</p>
+                <a href="https://recipes-app-luis.surge.sh/" class="btn-script" target="_blank">Ver Projeto</a>
+                <a href="https://github.com/LuisFelipee1/Recipes-App" class="btn-script" target="_blank">Ver Código</a>
+            </div>
+            <div class="snk-project pjct m-5">
+                <h2>Sneaker Air Store</h2>
+                <div class="carrossel-containerSNK">
+                    <div class="carrossel-slideSNK">
+                      <img src="./imgs/HOME-SNK.jpg" alt="Imagem-1">
+                      <img src="./imgs/LOGIN-SNK.jpg" alt="Imagem-2">
+                      <img src="./imgs/CADASTRAR-SNK.jpg" alt="Imagem-3">
+                    </div>
+                    <button class="carrossel-buttonSNK prevSNK" ng-click="prevSlideSNK()">&#10094;</button>
+                    <button class="carrossel-buttonSNK nextSNK" ng-click="nextSlideSNK()">&#10095;</button>
+                  </div>
+                <p>Para os entusiastas de esportes e moda, criei uma loja online especializada em tênis. O e-commerce apresenta uma ampla seleção de tênis, desde modelos para desempenho esportivo até estilos casuais e tendências da moda. A plataforma foi desenvolvida com um design moderno e responsivo, proporcionando uma experiência de compra fluida e agradável tanto em dispositivos móveis quanto em desktop. Com uma interface de usuário intuitiva, os clientes podem facilmente navegar pelas categorias, filtrar produtos por tamanho, cor e marca, e realizar compras de forma segura. A loja também oferece funcionalidades adicionais como avaliações de produtos, recomendações personalizadas e opções de pagamento diversificadas, garantindo que cada visita seja uma experiência satisfatória.</p>
+                <a href="" class="btn-script" target="_blank">Ver Projeto</a>
+                <a href="https://github.com/LuisFelipee1/sneaker-air-store" class="btn-script" target="_blank">Ver Código</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

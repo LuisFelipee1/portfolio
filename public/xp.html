@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="my-portfolio">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/xp.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-controller="xpController">
+    <div class="d-flex justify-content-start">
+        <button class="btn-back" ng-click="goToHome()">Voltar</button>
+    </div>
+    <div class="div-content">
+        <h1 class="text-center">Experiências</h1>
+    </div>
+    <div class="div-xp">
+        <div class="xp-trybe">
+            <h2 class="text-light">Curso de Programação na <img src="./imgs/trybe-logo.png" alt="" width="100px"></h2>
+            <p class="text-light text">Durante meu percurso na <span class="trybe-hover ">Trybe</span>, participei de um programa de formação intensivo em programação, com duração de 1 ano, de maio de 2023 a maio de 2024. O curso, com um total de 1.500 horas de aula, ofereceu uma formação abrangente e prática em diversas áreas essenciais do desenvolvimento de software.</p>
+            <p class="text-light">O que é a <a href="https://ajuda.betrybe.com/hc/pt-br/articles/360056299454-O-que-%C3%A9-a-Trybe">Trybe</a> ?</p>
+            <div>
+                <h2 class="text-light">Principais Áreas de Foco:</h2>
+                <p class="text-light text">
+                    <strong>- Introdução ao Desenvolvimento de Software:</strong> Base sólida nos princípios e práticas fundamentais. <br>
+                    <strong>- Front-End:</strong> Desenvolvimento de interfaces de usuário com HTML, CSS e JavaScript. <br>
+                    <strong>- Back-End:</strong> Criação de servidores, APIs e gerenciamento de banco de dados com Node.js, Express e outras tecnologias. <br>
+                    <strong>- Ciência da Computação:</strong> Fundamentos teóricos e algoritmos para o desenvolvimento de software. <br>
+                    <strong>- Engenharia de Software:</strong> Técnicas de design e arquitetura para soluções robustas e escaláveis. <br>
+                    <strong>- Metodologias Ágeis:</strong> Aplicação de Scrum e Kanban para gerenciamento de projetos. <br>
+                    <strong>- Habilidades Comportamentais:</strong> Desenvolvimento de soft skills como comunicação e trabalho em equipe. <br>
+                </p>
+                <h2 class="text-light">Certificações da trybe:</h2>
+                <img src="./certificates/certificado_fundamentos_trybe.png" alt="fundamentos" width="200px" class="btn-img">
+                <img src="./certificates/certificado_frontend_trybe.png" alt="front-end" width="200px" class="btn-img">
+                <img src="./certificates/certificado_back_end.png" alt="back-end" width="200px" class="btn-img">
+                <img src="./certificates/ciencia-computação-certificate.png" alt="ciência-da-computação" width="200px" class="btn-img">
+                <img src="./certificates/certificado-trybe-fullstack.png" alt="python" width="200px" class="btn-img">
+            </div>
+        </div>
+        <div class="xp-senac">
+            <h2 class="text-light">Faculdade em Análise e Desenvolvimento de Sistemas</h2>
+            <img src="./imgs/logo_senac.png" width="200px"  alt="logo-senac" class="img-senac">
+            <p class="text-light text">Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na instituição SENAC, no modelo de Ensino a Distância (EAD). Iniciado em abril de 2024 e com previsão de conclusão em abril de 2026, o curso oferece uma formação abrangente e flexível, permitindo o equilíbrio entre estudos e experiência prática.</p>
+            <h3 class="text-light">Aspectos Relevantes do Curso:</h3>
+            <p class="text-light text">
+                Análise e Desenvolvimento de Sistemas: Metodologias modernas e práticas de desenvolvimento e análise.
+                Ensino a Distância: Flexibilidade para integrar teoria com experiência prática.
+                Currículo Abrangente: Disciplinas em programação, banco de dados, engenharia de software e mais.
+            </p>
+            <p class="text-light text">Este curso complementa e expande meu conhecimento técnico, preparando-me para enfrentar desafios complexos no campo da tecnologia.</p>
+        </div>
+        <div class="xp-alpar">
+            <h2 class="text-light">Programa de Capacitação na <img src="./imgs//alpar-site-logo-branco.png" alt="alpar-logo" width="100px"></h2>
+            <p class="text-light text">Participei de um programa de capacitação na Alpar, de março de 2024 a agosto de 2024, projetado para expandir minhas habilidades técnicas e práticas.</p>
+            <h3 class="text-light">Principais Componentes do Programa:</h3>
+            <p class="text-light text">
+                Aulas com Especialistas em ServiceNow: Aprofundamento nas habilidades técnicas em ServiceNow.
+                Melhores Práticas em JavaScript e AngularJS: Aprimoramento de conhecimentos e práticas essenciais.
+                Módulos do ServiceNow: Exploração de diversos módulos para otimização de processos.
+                Consultoria e Estudos de Caso: Projetos simulando situações reais de clientes.
+            </p>
+            <p class="text-light">O que é <a href="https://www.servicenow.com/br/what-is-servicenow.html">ServiceNow</a> ?</p>
+            <p class="text-light text">Esse programa foi fundamental para aprimorar minhas habilidades técnicas e práticas, preparando-me para enfrentar desafios reais e oferecer soluções eficazes.</p>
+            <h2 class="text-light">Certificações:</h2>
+            <img src="./certificates/Captura de tela_28-8-2024_10425_.jpeg" alt="" width="200px" class="btn-img">
+            <img src="./certificates/Captura de tela_28-8-2024_104252_.jpeg" alt="" width="200px" class="btn-img">
+            <img src="./certificates/Captura de tela_28-8-2024_104320_.jpeg" alt="" width="200px" class="btn-img">
+            <img src="./certificates/Captura de tela_28-8-2024_104332_.jpeg" alt="" width="200px" class="btn-img">
+            <img src="./certificates/Captura de tela_28-8-2024_104342_.jpeg" alt="" width="200px" class="btn-img">
+            <img src="./certificates/Captura de tela_28-8-2024_10435_.jpeg" alt="" width="200px" class="btn-img">
+        </div>
+    </div>
+    <script src="./script/xp.js"></script>
+</body>
+</html>
