@@ -170,3 +170,23 @@
   }
   
 /*----------------------*/
+
+.projects {
+  /* flex-wrap: wrap; */
+}
+
+.recipe-project, .snk-project {
+  flex-grow: 1;
+  flex-basis: 200;
+}
+
+@media screen and (max-width: 768px) {
+  .recipe-project {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+}

@@ -85,3 +85,24 @@
     box-shadow: 0 0 20px blue;
     margin: 15px 0;
 }
+
+.btn-download-cv {
+    margin: 10px;
+    color: white;
+    border: solid 1px white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 20px white;
+    transition: 0.5s;
+}
+
+.btn-download-cv:hover {
+    box-shadow: 0 0 100px white;
+    transform: scale(1.20);
+}
+
+@media screen and (max-width: 768px) {
+    .div-xp {
+        padding: 0 30px 0 30px;
+    }
+}
